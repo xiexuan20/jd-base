@@ -179,6 +179,7 @@ docker run -dit \
     -v $ConfigDir:/jd/config \
     -v $LogDir:/jd/log \
     -v $ScriptsDir:/jd/scripts \
+    -v $jd_dir:/jd \
     -p $PanelPort:5678 \
     --name $ContainerName \
     --hostname jd \

@@ -176,10 +176,7 @@ fi
 
 log "\n3.创建容器并运行"
 docker run -dit \
-    -v $ConfigDir:/jd/config \
-    -v $LogDir:/jd/log \
-    -v $ScriptsDir:/jd/scripts \
-    -v $jd_dir:/jd \
+    -v $JdDir:/jd \
     -p $PanelPort:5678 \
     --name $ContainerName \
     --hostname jd \
